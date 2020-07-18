@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+span {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
 #nav-container {
   background-color: #333333;
   width: 100%;
@@ -58,12 +63,27 @@
 #section-banner-content {
   width: 50%;
   text-align: left;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #section-banner-content p {
-  overflow: scroll;
-  height: 400px;
+  overflow: auto;
   text-justify: auto;
   line-height: 1.5;
+  height: 300px;
+}
+
+button {
+  width: 35%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  transition: background;
+  transition-delay: 360ms;
+}
+
+button:hover {
+  background-color: blue;
 }
